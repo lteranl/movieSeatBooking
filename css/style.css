@@ -27,6 +27,11 @@ body {
   margin-left: 10px;
   padding: 5px 15px;
 }
+/* tillted screen down to make it look like a movie theater */
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
 .seat {
   background-color: #515161;
   height: 12px;
@@ -54,6 +59,43 @@ body {
   cursor: pointer;
   transform: scale(1.6);
 }
+/* adding this so that .seat:not(.occupied):hover does not change it. */
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+.showcase {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: rgb(75, 75, 75);
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
 .row {
   display: flex;
+}
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
+}
+p.text {
+  margin: 5px 0;
+}
+p.text span {
+  color: #6feaf6;
 }
