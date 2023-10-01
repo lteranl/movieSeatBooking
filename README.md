@@ -14,4 +14,4 @@ Number of seats and price will update
 Save seats, movie and price to local storage so that UI is still populated on refresh
 Design inspiration from Dribbble
 
-https://jjesusteran-mori.github.io/movieSeatBooking/
+https://lteranl.github.io/movieSeatBooking/
